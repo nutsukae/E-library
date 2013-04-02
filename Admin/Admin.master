@@ -1,0 +1,98 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Admin.master.cs" Inherits="Admin_Admin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Untitled Page</title>
+    <link rel="Stylesheet" type="text/css" href="../Css/Admin.css" />
+    
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+    </asp:ScriptManager>
+    <table id="wrapper">
+        <tr>
+            <td>
+               <table id ="Main" align="center">
+                    <tr>
+                        <td>
+                            <table id="WorkPanel" align="center" style="vertical-align:top;">
+                                <tr>
+                                    <td width="224px" class="topBanner" align="center">
+                                        <asp:Image ID="Image1" runat="server" ImageUrl="~/Image/logo.png" 
+                                            Height="109px" Width="124px" />
+                                    </td>
+                                    <td align="right" class="topBanner">
+                                        <asp:Image ID="Image2" runat="server" ImageUrl="~/Image/e-library_logo.jpg" />
+                                    </td>
+                                 </tr>
+                                <tr><td colspan="2" class="topLine"></td></tr>
+                                <tr>
+                                    <td valign="top" width="224px">
+                                        <table class="leftMenu">
+                                            <tr><td class="leftMenuTitle">ADMIN MENU</td></tr>
+                                            <tr>
+                                                <td class="TreeView">
+                                                    <asp:TreeView ID="TreeView1" runat="server" ImageSet="Simple">
+                                                        <ParentNodeStyle Font-Bold="False" />
+                                                        <HoverNodeStyle Font-Underline="True" ForeColor="#5555DD" />
+                                                        <SelectedNodeStyle Font-Underline="True" ForeColor="#5555DD" 
+                                                            HorizontalPadding="0px" VerticalPadding="0px" />
+                                                        <Nodes>
+                                                            <asp:TreeNode Text="E-Library" Value="E_Library">
+                                                                <asp:TreeNode NavigateUrl="~/Admin/E-Library/addNewBook.aspx" 
+                                                                    Text="Add New Book" Value="Add New Book"></asp:TreeNode>
+                                                                <asp:TreeNode NavigateUrl="~/Admin/E-Library/manageBook.aspx" 
+                                                                    Text="Manage Book" Value="Manage Book"></asp:TreeNode>
+                                                                <asp:TreeNode Text="Edit Master Data" Value="Edit Master Data">
+                                                                    <asp:TreeNode Text="Category" Value="Category" 
+                                                                        NavigateUrl="~/Admin/E-Library/ManageCategory.aspx"></asp:TreeNode>
+                                                                    <asp:TreeNode Text="Sub Category" Value="Sub Category" 
+                                                                        NavigateUrl="~/Admin/E-Library/ManageSubCategory.aspx"></asp:TreeNode>
+                                                                    <asp:TreeNode Text="Author" Value="Author" 
+                                                                        NavigateUrl="~/Admin/E-Library/ManageAuthor.aspx"></asp:TreeNode>
+                                                                    <asp:TreeNode Text="Publisher" Value="Publisher" 
+                                                                        NavigateUrl="~/Admin/E-Library/ManagePublisher.aspx"></asp:TreeNode>
+                                                                </asp:TreeNode>
+                                                            </asp:TreeNode>
+                                                        </Nodes>
+                                                        <NodeStyle Font-Names="Tahoma" Font-Size="10pt" ForeColor="White"    
+                                                            HorizontalPadding="0px" NodeSpacing="0px" VerticalPadding="0px" />
+                                                    </asp:TreeView>
+                                                </td>
+                                            </tr>
+                                         </table>
+                                         <table width="100%">
+                                            <tr><td align="center"><asp:Button ID="btnSignOut" runat="server" Text="SIGN OUT" 
+                                                    onclick="btnSignOut_Click" /></td></tr>
+                                        </table>
+                                    </td>
+                                    <td class="mainContentParent">
+                                        <table>
+                                            <tr><td class="mainContentTitle"><asp:ContentPlaceHolder ID="MainContentTitle" runat="server"></asp:ContentPlaceHolder></td></tr>
+                                            <tr><td class="mainContent"><asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder></td></tr>
+                                        </table>
+                                    </td>
+                                 </tr>
+                            </table>
+                        </td>        
+                    </tr>
+                    <tr>
+                        <td style="height:8%; color: #FFFFFF; font-family: Arial, Helvetica, sans-serif; font-size: medium;" 
+                            align="center">
+                            Interior Visions Co., Ltd.<br />
+                            1000/157,160,163,166 Liberty Plaza Bldg.3 th Sukhumvit 55 (Thonglor) North Klongton, Wattana, Bangkok 10110, Thailand
+                        </td>
+                   </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

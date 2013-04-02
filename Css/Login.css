@@ -1,0 +1,77 @@
+﻿html { height:100%;width:100%}
+
+#Web_bg
+{
+    border: 1px solid #696;
+    text-align: center; width: 1024px;
+    background: #B9B8B8;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#B9B8B8), to(#a8a8a8));
+    background: -moz-linear-gradient(#B9B8B8, #a8a8a8);
+    background: linear-gradient(#B9B8B8, #a8a8a8);
+    -pie-background: linear-gradient(#B9B8B8, #a8a8a8);
+    behavior: url(/PIE.htc);
+}
+
+#BG
+{
+    border: 1px solid #696;
+    text-align: center; width: 385px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow: #666 0px 2px 3px;
+    -moz-box-shadow: #666 0px 2px 3px;
+    box-shadow: #666 0px 2px 3px;
+    background: #d6d4d5;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#d6d4d5), to(#CBCACB));
+    background: -moz-linear-gradient(#d6d4d5, #CBCACB);
+    background: linear-gradient(#d6d4d5, #CBCACB);
+    -pie-background: linear-gradient(#d6d4d5, #CBCACB);
+    behavior: url(/PIE.htc);
+}
+
+#Left
+{
+    width:155px;
+    height:130px;
+    vertical-align:middle;
+    text-align:right;
+}
+
+#Right
+{
+    width:230px;
+    height:130px;
+}
+
+#txtUserName
+{
+    font-family: Calibri;
+    font-size: medium;
+    width: 170px;
+    height: 20px;
+}
+
+#txtPassword
+{
+    font-family: Calibri;
+    font-size: medium;
+    width: 170px;
+    height: 20px;
+}
+
+#lblWarning
+{
+    font-family: Calibri;
+    font-size: small ;
+    color : Red;
+}
+
+.Watermark
+{
+    font-family: Calibri;
+    font-size: medium;
+    font-weight: bold;
+    width: 1700px;
+    height: 20px;
+}

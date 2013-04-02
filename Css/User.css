@@ -1,0 +1,101 @@
+﻿/*Web Layout*/
+html {width:100%;height:100%;}
+body {margin:0px;width:100%;height:100%;background-color: #000000;}
+form {width:100%;height:100%;}
+#wrapper {width: 100%;height: 100%;}
+#Main{width: 100%;height: 100%;}
+#WorkPanel {width:1024px;height: 100%;}
+
+.leftMenu
+{
+	width: 224px;
+	vertical-align: top;
+	height: 400px;
+	border-bottom-style: dotted;
+	border-bottom-width: medium;
+	border-bottom-color: #FFFFFF;
+}
+
+.mainContentParent
+{
+	width: 800px;
+	vertical-align: top;
+	border-left-style: solid;
+	border-left-width: medium;
+	border-left-color: #FFFFFF;
+}
+
+.mainContent
+{
+	width: 800px;
+	vertical-align: top;
+}
+
+.mainContentItem { width:100%; }
+
+.topBanner {height: 109px;}
+
+.topLine
+{
+	height:2px;	
+	border-bottom-style: solid;
+	border-bottom-width: medium;
+	border-bottom-color: #FFFFFF;
+}
+
+.ThinBottomBorderWhite
+{
+	border-bottom-style: solid;
+	border-bottom-width: thin;
+	border-bottom-color: #FFFFFF;
+}
+
+/*Set label*/
+#MainContentTitle
+{
+	font-size: medium;
+	font-weight: bold;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+.mainContentTitle 
+{ 
+	width:800px; 
+	height:30px; 
+	color:White;
+	border-bottom-style: dotted;
+	border-bottom-width: medium;
+	border-bottom-color: #FFFFFF;
+}
+
+.leftMenuTitle
+{
+	text-align : center;
+	vertical-align: middle;
+	width: 224px;
+	height: 30px;
+	font-weight: bold;
+	font-size: medium;
+	font-family: Arial, Helvetica, sans-serif;
+	color: White;
+	border-bottom-style: dotted;
+	border-bottom-width: medium;
+	border-bottom-color: #FFFFFF;
+} 
+
+.text
+{
+	font-family: Arial, Helvetica, sans-serif;
+    color:White;
+}
+
+/*Ser Component*/
+.TreeView
+{
+	text-align: left;
+	font-size: medium;
+	font-family: Arial, Helvetica, sans-serif;
+	vertical-align: top;
+	color: White;
+}

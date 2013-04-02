@@ -1,0 +1,25 @@
+USE [InteriorVision]
+GO
+/****** Object:  StoredProcedure [dbo].[sp_Book_GetLastest8]    Script Date: 06/20/2011 00:39:46 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+-- =============================================
+-- Author:		<Author,,Name>
+-- Create date: <Create Date,,>
+-- Description:	<Description,,>
+-- =============================================
+CREATE PROCEDURE [dbo].[sp_Book_GetLastest8]
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+
+    -- Insert statements for procedure here
+	SELECT TOP 8 bookid, [name], imgpath = CASE
+		WHEN ([image] IS NULL OR [image] = '') THEN 'no_cover.jpg' ELSE ( CAST(bookid AS NVARCHAR(MAX)) + '/'+ [image]) END  
+	FROM tb_Book Order by rec_date DESC
+END
+
